@@ -42,7 +42,7 @@ with gr.Blocks() as demo:
             selected_points = gr.State([])
             masks = gr.State([])
 
-            with gr.Row().style(equal_height=True):
+            with gr.Row():
                 undo_points_button = gr.Button("Undo point")
                 reset_points_button = gr.Button("Reset points")
                 segment_button = gr.Button("Generate mask")
